@@ -37,7 +37,7 @@ This project was created within 1 weeks time.
 
 ## Summary
 
-Completing the above requirements for the project was quite the struggle. As this was my first project, I focused on getting my MVPs completed. Content first - Styling after.
+Completing the above requirements for the project was quite the struggle. As this was my first project, I focused on getting my MVPs completed. Content first - Styling after. Using BEM conventions and SCSS was something new to me, using BEM helped as it allowed me to quickly understand what classes were assigned. Ensuring that the website will look good on phones, tablets and laptops was the biggest struggle for me when completing this project. Just when I thought the website looked ok on my browser switching to mobile view broke everything and had me spend a lot of time troubleshooting.
 
 ## Tech Stack
 
