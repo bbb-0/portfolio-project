@@ -10,11 +10,13 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: #e5e7eb;
+  max-width: 100%;
+  padding: 1rem;
 }
 .main-nav .main-nav__list {
   display: flex;
   list-style: none;
-  gap: 2.5%;
+  gap: 1rem;
   justify-content: flex-end;
 }
 .main-nav .main-nav__item {
@@ -30,41 +32,48 @@ body {
   flex-direction: column;
   background-color: #1f2937;
   padding: 125px 15% 125px 15%;
+  max-width: 100%;
 }
 .hero .hero-title {
   color: white;
-  font-size: 52px;
+  font-size: 44px;
   font-weight: bolder;
   margin-bottom: 15px;
 }
 .hero .hero-text {
-  font-size: 24px;
+  font-size: 20px;
   color: #e5e7eb;
   flex-wrap: wrap;
-  width: 75%;
+  width: 80%;
 }
 
 .main-project__title {
-  font-size: 36px;
+  font-size: 32px;
   font-weight: bolder;
   display: flex;
   justify-content: center;
-  margin: 50px;
+  margin: 3rem;
 }
 
-.main-project__cont {
-  display: flex;
+.main-project__content {
+  max-width: 100%;
   text-align: center;
-  justify-content: space-between;
-  margin-bottom: 75px;
-  padding-inline: 15%;
+  justify-content: center;
+  border: 1px solid red;
+  gap: 10rm;
 }
+.main-project__content .main-project__item > img {
+  max-width: 25%;
+  height: auto;
+}
+
 .project-skills {
   flex-direction: column;
   padding-inline: 15%;
   background-color: #e5e7eb;
   border-radius: 1em;
   padding: 5%;
+  max-width: 100%;
 }
 .project-skills .project-skills__title {
   font-size: 28px;
@@ -115,19 +124,17 @@ body {
 .footer-container {
   background-color: #1f2937;
   color: #e5e7eb;
-  height: 80px;
+  height: 75px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .projects {
-  display: grid;
-  margin: 75px;
-  grid-template-columns: 1fr 1fr;
+  flex-direction: column;
+  align-items: center;
   gap: 30px;
-  justify-content: center;
-  border: 1px dotted black;
+  padding-inline: 20%;
 }
 .projects .card {
   border: 2px solid red;
@@ -144,12 +151,4 @@ body {
 .skills-title {
   font-size: 36px;
   text-align: center;
-}
-
-.contact-title {
-  text-align: center;
-  justify-content: center;
-}
-.contact-title .contact-links {
-  border: #1f2937;
 }/*# sourceMappingURL=styles.css.map */
