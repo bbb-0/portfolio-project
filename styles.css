@@ -1,3 +1,7 @@
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   font-family: sans-serif;
@@ -21,7 +25,7 @@ body {
 }
 .main-nav .main-nav__item {
   text-decoration: none;
-  font-size: 18px;
+  font-size: 1.2rem;
 }
 .main-nav .main-nav__item :hover {
   color: rgb(100, 100, 255);
@@ -36,19 +40,19 @@ body {
 }
 .hero .hero-title {
   color: white;
-  font-size: 44px;
+  font-size: 3.5rem;
   font-weight: bolder;
   margin-bottom: 15px;
 }
 .hero .hero-text {
-  font-size: 20px;
+  font-size: 1.75rem;
   color: #e5e7eb;
   flex-wrap: wrap;
   width: 80%;
 }
 
 .main-project__title {
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: bolder;
   display: flex;
   justify-content: center;
@@ -59,12 +63,17 @@ body {
   max-width: 100%;
   text-align: center;
   justify-content: center;
-  border: 1px solid red;
-  gap: 10rm;
+  margin-bottom: 50px;
+}
+.main-project__content .main-project__item {
+  margin-top: 20px;
 }
 .main-project__content .main-project__item > img {
   max-width: 25%;
   height: auto;
+}
+.main-project__content .main-project__links {
+  margin-top: 10px;
 }
 
 .project-skills {
@@ -84,11 +93,11 @@ body {
 }
 .project-skills .project-skills__items {
   display: flex;
-  gap: 75px;
+  gap: 2em;
   justify-content: center;
 }
 .project-skills .project-skills__items > img {
-  height: 75px;
+  width: 4em;
 }
 
 .contact-box {
@@ -96,23 +105,25 @@ body {
   color: #e5e7eb;
   display: flex;
   flex-direction: column;
-  height: 200px;
   border-radius: 10px;
-  margin: 5% 15% 5% 15%;
+  margin: 5%;
   text-align: center;
 }
 .contact-box .contact-box__title {
-  font-size: 24px;
-  padding: 20px;
+  font-size: 2rem;
+  padding-top: 20px;
   font-weight: bold;
 }
 .contact-box .contact-box__text {
-  margin-bottom: 20px;
+  font-size: 1.25rem;
+  padding: 2%;
 }
 .contact-box .contact-box__links {
   display: flex;
   justify-content: center;
   gap: 50px;
+  align-items: center;
+  padding-bottom: 20px;
 }
 .contact-box .contact-box__links :hover {
   -webkit-animation: pulse;
@@ -137,18 +148,33 @@ body {
   padding-inline: 20%;
 }
 .projects .card {
-  border: 2px solid red;
+  border-top: 2px groove red;
   gap: 30px;
+}
+.projects .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.projects .grid .button-container {
+  display: flex;
+  text-align: center;
+  justify-content: center;
 }
 .projects .card__footer {
   justify-content: flex-end;
   align-content: center;
 }
-.project1 {
-  border: 1px solid black;
-}
 
 .skills-title {
-  font-size: 36px;
+  font-size: 2rem;
   text-align: center;
+  padding: 2rem;
+}
+
+@media only screen and (min-width: 281px) and (max-width: 390px) {
+  .contact-box__links {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    transform: scale(0.75);
+  }
 }/*# sourceMappingURL=styles.css.map */
